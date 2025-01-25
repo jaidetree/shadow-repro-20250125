@@ -1,0 +1,7 @@
+["*.{clj,cljc,cljs,edn}*]
+indent_style=space
+
+["*.md"]
+max_line_length=80
+
+

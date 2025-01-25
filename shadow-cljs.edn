@@ -1,0 +1,15 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ []
+
+ :builds
+ {:demo {:target :node-test
+         :output-to "target/js/demo.js"
+         :compiler-options {:warnings {:invalid-arithmetic false}}
+         :ns-regexp "demo"
+         :autorun true
+         :release {:autorun false
+                   :compiler-options {:optimizations :advanced}}}}}
